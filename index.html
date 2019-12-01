@@ -5,27 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono&display=swap" rel="stylesheet">
     <title>Martyna Roj</title>
 </head>
 <body>
-    <header> <!--::after lines animations left & bottom right-->
-        <nav>
-            <li>
-                <a href="#">About</a>
-            </li>
-            <li>
-                <a href="#">Skills</a>
-            </li>
-            <li>
-                <a href="#">Projects</a>
-            </li>
-            <li>
-                <a href="#">Contact</a>
-            </li>
+    <header class="nav-bar"> <!--::after lines animations left & bottom right-->
+        <nav class="nav-bar__container">
+            <ul class="nav-bar__list">
+                <li class="nav-bar__element nav-bar__element--active">
+                    <a href="#section-about" class="nav-bar__link">About</a>
+                </li>
+                <li class="nav-bar__element">
+                    <a href="#section-skills" class="nav-bar__link">Skills</a>
+                </li>
+                <li class="nav-bar__element">
+                    <a href="#section-projects" class="nav-bar__link">Projects</a>
+                </li>
+                <li class="nav-bar__element">
+                    <a href="#section-contact" class="nav-bar__link">Contact</a>
+                </li>
+            </ul>
         </nav>
     </header>
     <main>
-        <section>
+        <section id="section-about">
             <p>             <!--::before H, ::after I,-->
                 HI,
             </p>
