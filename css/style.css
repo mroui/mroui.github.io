@@ -8,10 +8,14 @@
 
     --nav-text-color: rgba(0, 0, 0, 1);
     --nav-border-color-active: rgba(210, 145, 188, 1);
+    --nav-border-color: rgb(255, 255, 255);
 
     --text-color: rgba(0, 0, 0, 1);
-    --border-color: rgb(255, 255, 255);
+    --border-button-color: rgba(149, 125, 173, 1);
     --fill-color: rgb(255, 255, 255);
+
+    --special-font: 'Caveat Brush', 'Times New Roman', Times, serif;
+    --text-font: 'Share Tech Mono', 'Courier New', Courier, monospace;
 }
 
 body {
@@ -24,7 +28,7 @@ body {
 
 .nav-bar {
     color: var(--nav-text-color);
-    font-family: 'Share Tech Mono', monospace;
+    font-family: var(--text-font);
     font-weight: 400;
     font-size: 1.2em;
     width: 100%;
@@ -51,20 +55,18 @@ body {
     align-items: center;
     width: 140px;
     height: 35px;
-    border: 1.5px var(--border-color) solid;
+    border: 1.5px var(--nav-border-color) solid;
 }
 
 .nav-bar__element--active {
     text-decoration: underline;
     border: 1.5px var(--nav-border-color-active) solid;
-
 }
 
 .nav-bar__link {
     color: inherit;
     text-decoration: none;
     margin: 0;
-
 }
 
 
@@ -80,17 +82,17 @@ body {
 .section-about__wrapper {
     position: relative;
     width: 100%;
-    top: 15%;
+    top: 25%;
 }
 
 .section-about__hi{
     margin: 0;
-    font-family: 'Permanent Marker', 'Times New Roman', Times, serif;
+    font-family: var(--special-font);
     font-size: 140px;
     color: var(--main-first-color);
     position: absolute;
-    left: -110px;
-    top: -75px;
+    left: -95px;
+    top: -65px;
     z-index: 1;
 }
 
@@ -111,6 +113,9 @@ body {
     margin: auto;
     position: relative;
     border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 .main-box::before {
@@ -123,4 +128,58 @@ body {
     top: 30px;
     left: 30px;
     z-index: -1;
+}
+
+.main-box__header {
+    font-family: var(--special-font);
+    color: var(--main-first-color);
+    text-align: right;
+    padding-top: 24px;
+    font-size: 24px;
+}
+
+.main-box__text {
+    font-family: var(--text-font);
+    text-align: justify;
+    font-size: .9em;
+    line-height: 24px;
+    margin: 28px 0px 8px 0px;
+}
+
+.button {
+    font-family: var(--text-font);
+    width: 140px;
+    height: 35px;
+    text-decoration: none;
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.button:hover {
+    position: relative;
+    bottom: 5px;
+}
+
+.main-button {
+    border: 1.5px var(--border-button-color) solid;
+}
+
+.scroll {
+    position: relative;
+    left: 10%;
+    margin-top: 8%;
+    font-size: 24px;
+    border: 1.5px var(--fill-color) solid;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scroll__link {
+    color: var(--fill-color);
 }
