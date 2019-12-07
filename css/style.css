@@ -63,7 +63,7 @@ body {
     width: 100%;
     height: 100vh;
     min-height: 760px;
-    background: url(../images/bitmap.png) left top no-repeat,
+    background: url(../images/background-img-left.png) left top no-repeat,
                 url(../images/background-img-right.png) right top no-repeat,
                 var(--hero-background-color);
 }
