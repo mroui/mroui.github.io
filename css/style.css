@@ -63,7 +63,15 @@ body {
     width: 100%;
     height: 100vh;
     min-height: 760px;
-    background: var(--hero-background-color);
+    background: url(../images/bitmap.png) left top no-repeat,
+                url(../images/background-img-right.png) right top no-repeat,
+                var(--hero-background-color);
+}
+
+@media screen and (max-width: 960px) {
+    #section-about {
+        background: var(--hero-background-color);
+    }
 }
 
 .section-about__wrapper {
