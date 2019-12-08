@@ -26,11 +26,6 @@ body {
     z-index: 1;
 }
 
-.nav-bar__container {
-    display: flex;
-    justify-content: center;
-}
-
 .nav-bar__list {
     display: flex;
     justify-content: center;
@@ -62,7 +57,7 @@ body {
     position: relative;
     width: 100%;
     height: 100vh;
-    min-height: 760px;
+    min-height: fit-content;
     background: url(../images/background-img-left.png) left top no-repeat,
                 url(../images/background-img-right.png) right top no-repeat,
                 var(--hero-background-color);
@@ -156,17 +151,6 @@ body {
     border: 1.5px var(--border-button-color) solid;
 }
 
-.scroll {
-    height: 60px;
-    width: 60px;
-    font-size: 1.2em;
-    border: 1.5px var(--fill-color) solid;
-}
-
-.scroll__link {
-    color: var(--fill-color);
-}
-
 
 /* BUTTON */
 
@@ -174,8 +158,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 140px;
-    height: 35px;
+    padding: 8px 10px 8px 10px;
     font-family: var(--text-font);
     color: var(--text-color);
     text-decoration: none;
@@ -184,7 +167,6 @@ body {
 }
 
 .button:hover {
-    position: relative;
     transform: translateY(5px);
     text-decoration: underline;
 }
