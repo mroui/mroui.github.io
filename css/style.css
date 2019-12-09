@@ -56,30 +56,18 @@ body {
 #section-about {
     position: relative;
     width: 100%;
-    height: 100vh;
-    min-height: fit-content;
+    height: 100%;
+    min-height: 100vh;
     background: url(../images/background-img-left.png) left top no-repeat,
                 url(../images/background-img-right.png) right top no-repeat,
                 var(--hero-background-color);
 }
 
-@media screen and (max-width: 960px) {
-    #section-about {
-        background: var(--hero-background-color);
-    }
-}
-
 .section-about__wrapper {
     position: relative;
     width: 100%;
-    top: 25%;
+    padding: 200px 0 20px 0;
     z-index: 1;
-}
-
-@media screen and (max-height: 660px) {
-    .section-about__wrapper {
-        top: 175px;
-    }
 }
 
 .main-box {
@@ -94,17 +82,11 @@ body {
     box-sizing: border-box;
 }
 
-@media screen and (max-width: 650px) {
-    .main-box {
-        align-items: center;
-    }
-}
-
 .main-box::before {
     content: "";
     position: absolute;
-    width: 105%;
-    height: 110%;
+    width: 100%;
+    height: 100%;
     top: 30px;
     left: 30px;
     background: var(--fill-color);
@@ -169,4 +151,58 @@ body {
 .button:hover {
     transform: translateY(5px);
     text-decoration: underline;
+}
+
+@media screen and (max-width: 960px) {
+    #section-about {
+        background: var(--hero-background-color);
+    }
+    .section-about__hi{
+        left: -120px;
+        font-size: 8em;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .main-box {
+        align-items: center;
+        width: 80vw;
+        padding: 20px;
+    }
+    .main-box::before {
+        display: none;
+    }
+    .section-about__hi{
+        display: none;
+    }
+    .main-box__text {
+        font-size: 1em;
+    }
+    .main-box__header {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 416px) {
+    .main-box__text {
+        font-size: .9em;
+    }
+    .main-box__header {
+        font-size: 1.1em;
+    }
+    .nav-bar__element {
+        flex: 0 1 70px;
+    }
+}
+
+@media screen and (max-width: 276px) {
+    .section-about__wrapper {
+        padding-top: 230px;
+    }
+}
+
+@media screen and (max-width: 264px) {
+    .section-about__wrapper {
+        padding-top: 270px;
+    }
 }
