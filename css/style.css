@@ -23,7 +23,6 @@ body {
     position: absolute;
     width: 100%;
     font-size: 1.2em;
-    z-index: 1;
 }
 
 .nav-bar__list {
@@ -45,7 +44,6 @@ body {
 }
 
 .nav-bar__link {
-    margin: 0;
     color: inherit;
     text-decoration: none;
 }
@@ -54,9 +52,6 @@ body {
 /* SECTION-ABOUT */
 
 #section-about {
-    position: relative;
-    width: 100%;
-    height: 100%;
     min-height: 100vh;
     background: url(../images/background-img-left.png) left top no-repeat,
                 url(../images/background-img-right.png) right top no-repeat,
@@ -65,8 +60,8 @@ body {
 
 .section-about__wrapper {
     position: relative;
-    width: 100%;
     padding: 200px 0 20px 0;
+    z-index: 1;
 }
 
 .main-box {
@@ -81,7 +76,7 @@ body {
     box-sizing: border-box;
 }
 
-.main-box::before {
+.main-box:before {
     content: "";
     position: absolute;
     width: 100%;
@@ -100,10 +95,9 @@ body {
     font-family: var(--special-font);
     font-size: 9em;
     color: var(--main-color);
-    z-index: 1;
 }
 
-.section-about__hi::after{
+.section-about__hi:after{
     content: "i,";
     position: relative;
     top: 20px;
@@ -168,7 +162,7 @@ body {
         width: 80vw;
         padding: 20px;
     }
-    .main-box::before {
+    .main-box:before {
         display: none;
     }
     .section-about__hi{
