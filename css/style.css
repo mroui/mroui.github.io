@@ -23,6 +23,7 @@ body {
     position: absolute;
     width: 100%;
     font-size: 1.2em;
+    z-index: 2;
 }
 
 .nav-bar__list {
