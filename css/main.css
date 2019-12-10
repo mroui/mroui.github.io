@@ -1,0 +1,49 @@
+/*----------------------------------------------------------*/
+/*----------------------------------------------------------*/
+/* MAIN */
+
+:root {
+    --main-color: rgb(52, 52, 52);
+    --main-bcg-light-color: rgb(255, 255, 255);
+    --main-bcg-medium-color: rgb(240, 240, 240);
+    --text-color: rgb(43, 43, 43);
+    --fill-color: rgb(255, 255, 255);
+
+    --hero-background-color: rgb(240, 240, 240);
+    --hero-border-color: rgb(209, 196, 196);
+
+    --border-button-color: rgb(43, 43, 40);
+
+    --special-font: 'Times New Roman', Times, serif;
+    --text-font: 'Share Tech Mono', 'Courier New', Courier, monospace;
+}
+
+body {
+    margin: 0;
+}
+
+main {
+    background: var(--main-bcg-medium-color);
+}
+
+
+/*----------------------------------------------------------*/
+/*----------------------------------------------------------*/
+/* BUTTON */
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 10px 8px 10px;
+    font-family: var(--text-font);
+    color: var(--text-color);
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.button:hover {
+    transform: translateY(5px);
+    text-decoration: underline;
+}
