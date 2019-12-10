@@ -1,5 +1,6 @@
 :root {
     --main-color: rgb(52, 52, 52);
+    --main-light-color: rgb(240, 240, 240);
     --text-color: rgb(43, 43, 43);
     --fill-color: rgb(255, 255, 255);
 
@@ -14,6 +15,10 @@
 
 body {
     margin: 0;
+}
+
+main {
+    background: var(--main-light-color);
 }
 
 
@@ -53,6 +58,7 @@ body {
 /* SECTION-ABOUT */
 
 #section-about {
+    position: relative;
     min-height: 100vh;
     background: url(../images/background-img-left.png) left top no-repeat,
                 url(../images/background-img-right.png) right top no-repeat,
@@ -147,6 +153,9 @@ body {
     text-decoration: underline;
 }
 
+
+/* MEDIAS */
+
 @media screen and (max-width: 960px) {
     #section-about {
         background: var(--hero-background-color);
@@ -199,4 +208,73 @@ body {
     .section-about__wrapper {
         padding-top: 270px;
     }
+}
+
+
+/* ANIMATIONS */
+
+@-webkit-keyframes slideTopDown { from { top:-10vh;  opacity:0; } to { top: 0;  opacity:1; } }
+@-moz-keyframes slideTopDown { from { top:-10vh;  opacity:0; } to { top: 0;  opacity:1; } }
+@keyframes slideTopDown { from { top:-10vh;  opacity:0; } to { top: 0;  opacity:1; } }
+
+.slide-top-down {
+    top: -10vh;
+    opacity: 0;
+
+    -webkit-animation: slideTopDown ease-in-out  1;
+    -moz-animation: slideTopDown ease-in-out  1;
+    animation: slideTopDown ease-in-out  1;
+
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+@-webkit-keyframes slideDownTop { from { top:-100vh; } to { top: 0;  } }
+@-moz-keyframes slideDownTop { from { top:-100vh; } to { top: 0;  } }
+@keyframes slideDownTop { from { top:-100vh; } to { top: 0;  } }
+
+.slide-down-top {
+    top: -100vh;
+
+    -webkit-animation: slideDownTop ease-in-out  1;
+    -moz-animation: slideDownTop ease-in-out  1;
+    animation: slideDownTop ease-in-out  1;
+
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+
+@-webkit-keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@-moz-keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+.fade-in {
+    opacity: 0;
+
+    -webkit-animation: fadeIn ease-in-out  1;
+    -moz-animation: fadeIn ease-in-out  1;
+    animation: fadeIn ease-in-out  1;
+
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+
+    -webkit-animation-duration: .5s;
+    -moz-animation-duration: .5s;
+    animation-duration: .5s;
+
+    -webkit-animation-delay: .9s;
+    -moz-animation-delay: .9s;
+    animation-delay: .9s;
 }
