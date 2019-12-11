@@ -18,6 +18,10 @@
     --text-font: 'Share Tech Mono', 'Courier New', Courier, monospace;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
 }

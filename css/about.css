@@ -21,9 +21,6 @@
 .nav-bar__element {
     flex: 0 1 140px;
     margin: 10px;
-}
-
-.nav-bar__element--active {
     border: 1.5px var(--border-button-color) dashed;
 }
 
