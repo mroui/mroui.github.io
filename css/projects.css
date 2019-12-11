@@ -1,8 +1,8 @@
 /*----------------------------------------------------------*/
 /*----------------------------------------------------------*/
-/* SECTION-SKILLS */
+/* SECTION-PROJECTS */
 
-#section-skills {
-    background: red;
-    height: 200px;
+#section-projects {
+    min-height: 100vh;
+    background: var(--main-bcg-light-color);
 }
