@@ -37,7 +37,7 @@
 /*----------------------------------------------------------*/
 /* SECTION-ABOUT */
 
-#section-about {
+.section-about {
     position: relative;
     min-height: 100vh;
     background: url(../images/background-img-left.png) left top no-repeat,
@@ -119,7 +119,7 @@
 /* MEDIAS */
 
 @media screen and (max-width: 960px) {
-    #section-about {
+    .section-about {
         background: var(--hero-background-color);
     }
     .section-about__hi{
