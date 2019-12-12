@@ -18,7 +18,7 @@
     width: 100%;
     height: 10vw;
     padding-top: 15vw;
-    font-family: var(--special-font);
+    font-family: var(--text-font);
     font-variant: small-caps;
     font-size: 2.1em;
     letter-spacing: 12px;
@@ -44,4 +44,39 @@
     height: 200px;
     margin-top: 50px;
     background: red;
+}
+
+/*----------------------------------------------------------*/
+/*----------------------------------------------------------*/
+/* MEDIAS */
+
+@media screen and (max-width: 960px) {
+    .section-projects__header {
+        font-size: 1.8em;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .section-projects__header {
+        font-size: 1.5em;
+        letter-spacing: 10px;
+    }
+}
+
+@media screen and (max-width: 416px) {
+    .section-projects__header {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 276px) {
+    .section-projects__header {
+        letter-spacing: 5px;
+    }
+}
+
+@media screen and (max-width: 264px) {
+    .section-projects__header {
+        letter-spacing: 2px;
+    }
 }
