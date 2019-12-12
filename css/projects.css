@@ -2,7 +2,46 @@
 /*----------------------------------------------------------*/
 /* SECTION-PROJECTS */
 
-#section-projects {
+.section-projects {
     min-height: 100vh;
-    background: var(--main-bcg-light-color);
+    height: 100%;
+    background: url(../images/background-projects-bottom.png) center bottom no-repeat,
+                url(../images/backgrund-projects-top.png) center top no-repeat,
+                var(--main-bcg-light-color);
+    background-size: contain, contain;
+    padding: 0;
+    margin: 0;
+}
+
+.section-projects__header {
+    position: relative;
+    width: 100%;
+    height: 10vw;
+    padding-top: 15vw;
+    font-family: var(--special-font);
+    font-variant: small-caps;
+    font-size: 2.1em;
+    letter-spacing: 12px;
+    color: var(--main-color);
+    text-align: center;
+}
+
+.section-projects__header > h2 {
+    margin: 0;
+    padding: 0;
+}
+
+.section-projects__footer {
+    height: 20vw;
+}
+
+.section-projects__wrapper {
+    background: green;
+    margin: 0 15vw 0 15vw;
+}
+
+.project {
+    height: 200px;
+    margin-top: 50px;
+    background: red;
 }
