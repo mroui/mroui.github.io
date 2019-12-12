@@ -14,21 +14,7 @@
 }
 
 .section-projects__header {
-    position: relative;
-    width: 100%;
-    height: 10vw;
     padding-top: 15vw;
-    font-family: var(--text-font);
-    font-variant: small-caps;
-    font-size: 2.1em;
-    letter-spacing: 12px;
-    color: var(--main-color);
-    text-align: center;
-}
-
-.section-projects__header > h2 {
-    margin: 0;
-    padding: 0;
 }
 
 .section-projects__footer {
