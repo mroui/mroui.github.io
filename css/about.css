@@ -40,6 +40,66 @@
 
 /*----------------------------------------------------------*/
 /*----------------------------------------------------------*/
+/* ASIDE-SOCIALS */
+
+.aside-socials {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    z-index: 2;
+}
+
+.socials__wrapper {
+    width: 100%;
+    background: var(--fill-color);
+    border: 1.5px black dashed;
+
+    transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+}
+
+
+.socials__wrapper:hover {
+    padding-right: 10px;
+    border: 1.5px black solid;
+
+    transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+}
+
+#icon-github:hover {
+    background: black;
+    color: white;
+    transition: all 0.2s ease-in-out;
+}
+
+#icon-linkedin:hover {
+    background: #007bb6;
+    color: white;
+    transition: all 0.2s ease-in-out;
+}
+
+#icon-cv:hover {
+    background: #bd081c;
+    color: white;
+    transition: all 0.2s ease-in-out;
+}
+
+.socials__link {
+    display: block;
+    color: black;
+    padding: 15px;
+    transition: all 0.5s ease-in-out;
+}
+
+
+/*----------------------------------------------------------*/
+/*----------------------------------------------------------*/
 /* SECTION-ABOUT */
 
 .section-about {
@@ -163,11 +223,17 @@
     .nav-bar__element {
         flex: 0 1 100px;
     }
+    .socials__link {
+        padding: 12px;
+    }
 }
 
 @media screen and (max-width: 276px) {
     .section-about__wrapper {
         padding-top: 230px;
+    }
+    .socials__link {
+        padding: 10px;
     }
 }
 
