@@ -107,7 +107,7 @@
     min-height: 100vh;
     background: url(../images/background-img-left.png) left top no-repeat,
                 url(../images/background-img-right.png) right top no-repeat,
-                var(--hero-background-color);
+                var(--main-bcg-medium-color);
 }
 
 .section-about__wrapper {
@@ -185,7 +185,7 @@
 
 @media screen and (max-width: 960px) {
     .section-about {
-        background: var(--hero-background-color);
+        background: var(--main-bcg-medium-color);
     }
     .section-about__hi{
         left: -120px;
