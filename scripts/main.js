@@ -1,2 +1,2 @@
 let contactForm = document.getElementById('contact-form');
-contactform.setAttribute('action', 'https:' + '//formspree.io/' + 'martynaxroj' + '@' + 'gmail' + '.' + 'com');
+contactForm.setAttribute('action', '//formspree.io/' + 'martynaxroj' + '@' + 'gmail' + '.' + 'com');
