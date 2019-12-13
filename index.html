@@ -77,8 +77,20 @@
             <header class="section__header section-contact__header">
                 <h2>Contact</h2>
             </header>
+            <div class="section-contact__wrapper">
+                <form id="contact-form" method="POST" autocomplete="off" class="section-contact__form">
+                    <input type="hidden" name="_subject" value="Portfolio website contact request">
+                    <input type="text" name="_gotcha" style="display:none">
+                    <input type="text" name="name" placeholder="Name*" minlength="5" class="form__inputs form__name" required>
+                    <input type="email" name="_replyto" placeholder="Email*" minlength="5" class="form__inputs form__email" required>
+                    <textarea name="message" rows="8" placeholder="Message*" minlength="5" class="form__inputs form__message" required></textarea>
+                    <input type="submit" value="Send" class="button form__submit">
+                    <!-- <input type="hidden" name="_next" value="#"> -->
+                </form>
+            </div>
         </section>
     </main>
     <footer></footer>
+    <script src="scripts/main.js"></script>
 </body>
 </html>
