@@ -13,8 +13,8 @@
 }
 
 .section-contact__wrapper {
-    margin: 2vw 15vw 2vw 15vw;
-    border: 10px var(--hero-border-color) dashed;
+    margin: 2vw 15vw 0 15vw;
+    border: 10px var(--main-border-color) dashed;
 }
 
 .section-contact__form {
