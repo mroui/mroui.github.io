@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono|Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono&display=swap" rel="stylesheet">
     <!-- icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- styles -->
@@ -19,7 +19,7 @@
 </head>
 <body>
     <header class="nav-bar slide-top-down">
-        <nav class="nav-bar__container">
+        <nav class="nav-bar__wrapper">
             <ul class="nav-bar__list">
                 <li class="button nav-bar__element">
                     <a href="#about" class="nav-bar__link">About</a>
@@ -33,21 +33,24 @@
             </ul>
         </nav>
     </header>
+    <aside class="aside-socials">
+        <div class="socials__wrapper">
+            <a id="icon-github" href="https://github.com/mroui" target="_blank" class="socials__link">
+                <i class="fa fa-github"></i>
+            </a>
+            <a id="icon-linkedin" href="#link-to-linkedin" target="_blank" class="socials__link"> <!--TODO: add link to linkedin profile-->
+                <i class="fa fa-linkedin"></i>
+            </a>
+            <a id="icon-cv" href="#link-to-cv" target="_blank" class="socials__link"> <!--TODO: add cv/resume file-->
+                <i class="fa fa-file-text"></i>
+            </a>
+        </div>
+    </aside>
     <main>
-        <aside class="aside-socials">
-            <div class="socials__wrapper">
-                <a id="icon-github" href="https://github.com/mroui" target="_blank" class="socials__link">
-                    <i class="fa fa-github"></i>
-                </a>
-                <a id="icon-linkedin" href="#link-to-linkedin" target="_blank" class="socials__link"> <!--TODO: add link to linkedin profile-->
-                    <i class="fa fa-linkedin"></i>
-                </a>
-                <a id="icon-cv" href="#link-to-cv" target="_blank" class="socials__link"> <!--TODO: add cv/resume file-->
-                    <i class="fa fa-file-text"></i>
-                </a>
-            </div>
-        </aside>
         <section id="about" class="section-about slide-down-top">
+            <header class="section__header section-about__header">
+                <h2>About</h2>
+            </header>
             <div class="section-about__wrapper fade-in">
                 <section class="main-box">
                     <p class="section-about__hi">H</p>
@@ -64,12 +67,43 @@
                 <h2>Projects</h2>
             </header>
             <div class="section-projects__wrapper">
-                <div class="project"></div>
-                <div class="project"></div>
-                <div class="project"></div>
-                <div class="project"></div>
-                <div class="project"></div>
-                <div class="project"></div>
+                <article class="project">
+                    <div class="project__content">
+                        <h3 class="content__title">Pokedex</h3>
+                        <ul class="content__technologies">
+                            <li class="techologies__element">
+                                <p class="technologies__tag">#Android</p>
+                            </li>
+                            <li class="techologies__element">
+                                <p class="technologies__tag">#Java</p>
+                            </li>
+                            <li class="techologies__element">
+                                <p class="technologies__tag">#Android-Studio</p>
+                            </li>
+                            <li class="techologies__element">
+                                <p class="technologies__tag">#Mobile</p>
+                            </li>
+                            <li class="techologies__element">
+                                <p class="technologies__tag">#REST</p>
+                            </li>
+                            <li class="techologies__element">
+                                <p class="technologies__tag">#Api</p>
+                            </li>
+                        </ul>
+                        <p class="content__description">Pokedex is an android mobile application which is kind of a guide with useful informations for Pokemon games players. An application uses the RESTful Pokemon API -> <a href="https://pokeapi.co/" target="_blank">PokéAPI</a>.</p>
+                        <div class="content__buttons">
+                            <a href="https://github.com/mroui/pokedex" target="_blank" class="button content__button">
+                                <span>GitHub</span>
+                            </a>
+                            <a href="" class="button content__button">
+                                <span>Live Demo</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project__image">
+                        <img src="images/projects/pokedex.png" alt="Pokedex" class="image-src">
+                    </div>
+                </article>
             </div>
             <footer class="section-projects__footer"></footer>
         </section>
@@ -92,7 +126,7 @@
     </main>
     <footer>
         <div class="footer__wrapper">
-            <p class="footer__copyright">© 2019 Martyna Rój | All rights reserved</p>
+            <p class="footer__copyright">© 2019 Martyna Rój</p>
         </div>
     </footer>
     <script src="scripts/main.js"></script>
