@@ -1,1 +1,1 @@
-# [Portfolio website](https://mroui.github.io/portfolio/)
+# [Portfolio website](https://mroui.github.io)
